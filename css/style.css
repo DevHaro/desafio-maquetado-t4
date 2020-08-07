@@ -1,0 +1,129 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+header nav{
+  display: block;
+  flex-direction: row;
+  width: 100vw;
+}
+ul{
+  background-color: hsl(257, 27%, 26%);
+  color: white;
+  font-family: poppins;
+  text-align: center;
+  padding: 5px;
+  font-weight: 700;
+  border-radius: 10px;
+  width: 90vw;
+}
+header nav ul li{  
+  padding: 20px 0;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  list-style: none;
+}
+header nav ul li:nth-child(4){
+  border-top: 1px solid hsl(0, 0%, 75%);
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+h1{
+  line-height: 50px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+.texto-inicial{
+  text-align: center;
+}
+.boton{
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 25px;
+  padding: 10px; 
+  color: white;
+  border-style: none;
+  margin-top: -10px; 
+  width: 95%;
+  font-weight: 700;  
+}
+.boton-start{
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 25px;
+  padding: 10px; 
+  color: white;
+  border-style: none;
+  margin-top: -10px; 
+  width: 95%;
+  font-weight: 700; 
+  width: 40vw;
+}
+
+main .search-box{
+  background-image: url(images/bg-shorten-mobile.svg);
+  background-color: hsl(257, 27%, 26%); 
+  display: block;
+  height: 140px;
+  width: 80vw;
+  text-align: center;
+  border-radius: 10px;
+  margin: auto;
+}
+
+main .search-box input{
+  margin-top: 15px;
+  height: 50px;
+  border-radius: 7px;
+  margin-bottom: 0;
+}
+main .search-box button{
+  margin-top: 10px;
+  height: 50px;
+  width: 85%;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  background-color: hsl(180, 66%, 49%);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.short{
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 3px;
+  padding: 10px;
+  color: white;
+  border-style: none;
+}
+/* .boton-start{  
+  text-align: center;
+  padding: 5px;
+  justify-self: center;
+} */
+body{
+  width: 375px;
+}
+.primera-seccion{
+  display: block;
+  width: 375px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.mujer-trabajando img{  
+  width: 100vw;
+  margin-top: 20px;
+}
+
+p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: hsl(0, 0%, 75%);
+}
+
+h1{
+  margin-top: 20px;
+  color: hsl(255, 11%, 22%);
+}
