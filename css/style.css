@@ -4,12 +4,18 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body{
+  width: 375px;
+}
 header nav{
   display: block;
   flex-direction: row;
-  width: 100vw;
+  width: 100vw;  
 }
-ul{
+header nav img{
+  margin-bottom: 10px;
+}
+header nav ul{
   background-color: hsl(257, 27%, 26%);
   color: white;
   font-family: poppins;
@@ -27,9 +33,20 @@ header nav ul li{
   list-style: none;
 }
 header nav ul li:nth-child(4){
-  border-top: 1px solid hsl(0, 0%, 75%);
-  padding-bottom: 20px;
-  padding-top: 30px;
+  border-top: 1px solid hsl(257, 7%, 63%);
+  /* border-top: 1px solid hsl(0, 0%, 75%); */
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+.primera-seccion{
+  display: block;
+  width: 375px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.mujer-trabajando img{  
+  width: 100vw;
+  margin-top: 20px;
 }
 h1{
   line-height: 50px;
@@ -47,7 +64,7 @@ h1{
   color: white;
   border-style: none;
   margin-top: -10px; 
-  width: 95%;
+  /* width: 95%; */
   font-weight: 700;  
 }
 .boton-start{
@@ -56,31 +73,51 @@ h1{
   padding: 10px; 
   color: white;
   border-style: none;
-  margin-top: -10px; 
-  width: 95%;
+  margin-top: -10px;   
   font-weight: 700; 
-  width: 40vw;
+  width: 40vw; 
+}
+
+.boton-sign{
+  width: 95%;
+  height: 50px;
 }
 
 main .search-box{
-  background-image: url(images/bg-shorten-mobile.svg);
-  background-color: hsl(257, 27%, 26%); 
+  background-image: url("/images/bg-shorten-mobile.svg");
+  /* background-color: hsl(257, 27%, 26%);      */
+  /* background-color: hsl(0, 87%, 67%);   */
+  background-position: right top;
+  background-size: contain;
   display: block;
   height: 140px;
   width: 80vw;
   text-align: center;
   border-radius: 10px;
-  margin: auto;
+  margin: auto;  
+  z-index: 9999;
+  border: 1px solid black;
 }
 
+main .search-box img{
+  margin: 0;
+  padding: 0;
+  height: 140px;
+  width: 80vw !important;
+  background-size: cover;
+  width: 100vw;  
+  /* color: red; */
+  border-radius: 10px;
+}
+
+
 main .search-box input{
-  margin-top: 15px;
+  margin-top: 10px;
   height: 50px;
   border-radius: 7px;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
-main .search-box button{
-  margin-top: 10px;
+main .search-box button{ 
   height: 50px;
   width: 85%;
   border-radius: 7px;
@@ -103,19 +140,7 @@ main .search-box button{
   padding: 5px;
   justify-self: center;
 } */
-body{
-  width: 375px;
-}
-.primera-seccion{
-  display: block;
-  width: 375px;
-  text-align: center;
-  margin-bottom: 80px;
-}
-.mujer-trabajando img{  
-  width: 100vw;
-  margin-top: 20px;
-}
+
 
 p{
   margin-top: 20px;
@@ -126,4 +151,76 @@ p{
 h1{
   margin-top: 20px;
   color: hsl(255, 11%, 22%);
+}
+
+.seccion-dos{
+  background-color: #f0f1f6;  
+  /* margin-top: -70px;  */
+  padding-top: 70px;
+  z-index: 1;
+}
+
+.seccion-dos .titulo-tarjetas h3{
+  margin-top: 50px;
+  text-align: center;
+  color: hsl(255, 11%, 22%);
+  font-size: 28px;
+}
+
+.seccion-dos .titulo-tarjetas p{
+  text-align: center;  
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.articulo-1, .articulo-2, .articulo-3{
+  background-color: #ffffff;
+  text-align: center;
+  width: 90vw;
+  border-radius: 5px;
+  margin: auto;  
+  margin-bottom: 100px;
+}
+
+.articulo-1 img, .articulo-2 img, .articulo-3 img{    
+  border-radius: 50%;  
+  margin-top: -35px;   
+  padding: 20px;
+}
+
+.articulo-1 p, .articulo-2 p, .articulo-3 p{
+  font-size: 18px;
+}
+
+.fondo-circulos {
+  background-color: hsl(257, 27%, 26%);    
+  width: 20vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.seccion-dos .tarjetas h4{
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.seccion-tres{
+ background-image: url("/images/bg-boost-mobile.svg"); 
+ background-color: hsl(257, 27%, 26%);
+ width: 100vw;
+ height: 300px;
+ text-align: center;
+}
+
+.seccion-tres .final h3{
+  margin: 0;  
+  color: #ffffff;    
+  padding: 80px; 
+  /* padding-top: 80px; */
+  /* padding-bottom: 20px; */
+}
+
+.seccion-tres .final boton-3{
+  width: 40% !important;
+  height: 40px;
 }
