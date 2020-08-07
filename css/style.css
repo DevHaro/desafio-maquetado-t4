@@ -85,10 +85,11 @@ h1{
 
 main .search-box{
   background-image: url("/images/bg-shorten-mobile.svg");
+  background-color: hsl(257, 27%, 26%);
   /* background-color: hsl(257, 27%, 26%);      */
-  /* background-color: hsl(0, 87%, 67%);   */
+  /* background-color: hsl(260, 8%, 14%);   */
   background-position: right top;
-  background-size: contain;
+  background-size: cover;
   display: block;
   height: 140px;
   width: 80vw;
@@ -157,8 +158,18 @@ h1{
   background-color: #f0f1f6;  
   /* margin-top: -70px;  */
   padding-top: 70px;
-  z-index: 1;
+  padding-bottom: 1px;
 }
+
+.seccion-dos .tarjetas{
+  background-color: #f0f1f6;  
+  /* margin-top: -70px;  */  
+  /* padding-bottom: 50px; */
+}
+.articulo-1, .articulo-2, .articulo-3{
+  padding-bottom: 20px;
+}
+
 
 .seccion-dos .titulo-tarjetas h3{
   margin-top: 50px;
@@ -208,19 +219,27 @@ h1{
  background-image: url("/images/bg-boost-mobile.svg"); 
  background-color: hsl(257, 27%, 26%);
  width: 100vw;
- height: 300px;
+ height: 280px;
  text-align: center;
+ margin: 0;
+ padding: 0;
 }
 
 .seccion-tres .final h3{
+  font-size: 18px;
   margin: 0;  
   color: #ffffff;    
-  padding: 80px; 
-  /* padding-top: 80px; */
-  /* padding-bottom: 20px; */
+  padding-top: 105px; 
+  padding-bottom: 20px;
 }
 
-.seccion-tres .final boton-3{
-  width: 40% !important;
+.seccion-tres .final .boton-3{
+  width: 40vw;
   height: 40px;
+}
+
+footer{
+  background-color: hsl(260, 8%, 14%);
+  color: #ffffff;
+  text-align: center;
 }
