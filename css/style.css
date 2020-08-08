@@ -7,6 +7,50 @@
 body{
   width: 375px;
 }
+.wrapper-top{
+  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.hamburger-wrapper{
+  /* margin-left: auto; */
+  width: 30px;
+  height: 30px;
+  border: 1px solid #acacac;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+.hamburger-icon{
+  border: 2px solid #acacac;
+  border-radius: 3px;
+  width: 20px;  
+  height: 3px;
+  background: #acacac;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 6px 0px #acacac, 0px -6px 0px #acacac;
+}
+.hamburger-wrapper + input{
+  display: none;
+}
+.hamburger-wrapper:hover{
+  cursor: pointer;
+}
+.nav-wrapper{
+  /* max-height: 0px;  */
+  transition: max-height .5s ease;
+  overflow: hidden;
+}
+#hamburger-input:checked + .nav-wrapper{
+  max-height: 1000px;
+}
+
 header nav{
   display: block;
   flex-direction: row;
@@ -25,7 +69,7 @@ header nav ul{
   border-radius: 10px;
   width: 90vw;
 }
-header nav ul li{  
+header nav ul li{   
   padding: 20px 0;
   width: 85%;
   margin: auto;
@@ -277,49 +321,3 @@ footer .social-media ul li{
   padding: 0 10px;
 }
 
-@media only screen and (min-width: 940px){ 
-  body{
-    padding: 50px; 
-  }
-
-  body header nav img{
-    width: 100px;
-  }
-
-  header nav{
-    display:flex;
-    justify-content: space-between;
-    width: 100vw;   
-  }
-
-  header nav ul{
-    display:flex;
-    justify-content: flex-start;
-    list-style: none;
-    background-color: white;
-    color: black;
-  }
-  li{
-    padding: 12px;
-  }
-
-  .primera-seccion{
-    display: flex;
-    /* flex-direction: row;     */
-    justify-content: flex-end;
-    /* flex-direction: row-reverse; */
-    /* width: 100vw; */
-  }
-  /* .primera-seccion .wrapper-primera-seccion{
-    display: flex;    
-    width: 100vw;     */
-    
-
-
-  }
-
-  .primera-seccion .wrapper-primera-seccion .mujer-trabajando img{
-    width: 100%;
-  }
-
-}
