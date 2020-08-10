@@ -21,7 +21,7 @@
       <div class="hamburger-icon"><i class="fas fa-bars"></i></div>    
     </label>
     <input id="hamburger-input" type="checkbox">
-    <nav class="nav-wrapper nav-desktop">
+    <nav class="nav-wrapper">
         <ul class="primer-ul">
           <li>Features</li>
           <li>Pricing</li>
@@ -35,7 +35,7 @@
     </nav>
   </header>  
 
-  <section class="primera-seccion">
+  <div class="primera-seccion">
     <div class="wrapper-primera-seccion">
       <div class="mujer-trabajando">
         <img src="images/illustration-working.svg" alt="">
@@ -48,28 +48,18 @@
       </div>
     </div>
     </div>
-  </section>
+  </div>
   <main>
     <div class="search-box">
-      <input type="text" placeholder="Shorten a link here...">
-      <!-- ******************* -->
+      <input type="text" placeholder="Shorten a link here...">    
+      <!-- <p>Please add a link</p> -->
       <label for="button-input">
-        Shorten a link here...
-      </label>
-      <!-- <input id="button-input" type="checkbox"> -->
-      
-      <!-- <button>Shorten It!</button> -->
+        Shorten It
+      </label>    
     </div>
-
-
-    <!-- <label class="hamburger-wrapper" for="hamburger-input">
-      <div class="hamburger-icon"><i class="fas fa-bars"></i></div>    
-    </label>
-    <input id="hamburger-input" type="checkbox"> -->
-
     <section class="seccion-dos">
       <input id="button-input" type="checkbox"> 
-        <div class="wrapper-links">
+        <div class="wrapper-links" id="oculto">
         <div class="box-one">
           <div class="box-one-top">
             <p>https://www.frontendmentor.io</p>
@@ -103,30 +93,42 @@
         <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
       </div>
       <div class="tarjetas">
-        <article class="articulo-1">
+        <div class="articulo-1">
           <img src="images/icon-brand-recognition.svg" alt="" class="fondo-circulos">
           <h4>Brand Recognition</h4>
           <p>Boost your brand recognition with each click. Generic links don’t
             mean a thing. Branded links help instil confidence in your content.            
           </p>
-        </article>
+        </div>
+        <!-- <article class="articulo-1"> -->
+         
+        <!-- </article> -->
+
         <div class="verticalLine">          
         </div>
-        <article class="articulo-2">
+
+        <div class="articulo-2">
           <img src="images/icon-detailed-records.svg" alt="" class="fondo-circulos">
           <h4>Detailed Records</h4>
           <p>Gain insights into who is clicking your links. Knowing when and where
             people engage with your content helps inform better decisions.            
           </p>
-        </article>
+        </div>
+        <!-- <article class="articulo-2"> -->
+          
+        <!-- </article> -->
+
         <div class="verticalLine">          
         </div>
-        <article class="articulo-3">
+        <div class="articulo-3">
           <img src="images/icon-fully-customizable.svg" alt="" class="fondo-circulos">
           <h4>Fully Customizable</h4>
           <p>Improve brand awareness and content discoverability through customizable
             links, supercharging audience engagement.</p>
-        </article>
+        </div>
+        <!-- <article class="articulo-3"> -->
+          
+        <!-- </article> -->
       </div>
     </section>
     <section class="seccion-tres">
@@ -137,7 +139,10 @@
     </section>
   </main>
   <footer>
-    <img src="images/logo.svg" alt="logo">
+    <div class="footer-img">
+      <img src="images/logo.svg" alt="logo">
+    </div>
+    
     <div class="footer-1">
       <h5>Features</h5>
       <ul>
